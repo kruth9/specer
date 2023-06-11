@@ -1,0 +1,439 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from preview.colorlib.com/theme/specer/club.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 07:36:57 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Specer Template">
+<meta name="keywords" content="Specer, unica, creative, html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Specer | Template</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'Css/bootstrap.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'Css/font-awesome.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'Css/owl.carousel.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'Css/magnific-popup.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'Css/slicknav.min.css' %}" type="text/css">
+<link rel='stylesheet' href="{% static 'Css/style.css' %}">
+<script nonce="fa04c5a7-746f-466d-bb80-da2c6b77bf82">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="../../cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+
+<div id="preloder">
+<div class="loader"></div>
+</div>
+
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+<div class="canvas-close">
+<i class="fa fa-close"></i>
+</div>
+<div class="search-btn search-switch">
+<i class="fa fa-search"></i>
+</div>
+<div class="header__top--canvas">
+<div class="ht-info">
+<ul>
+<li>20:00 - May 19, 2019</li>
+<li><a href="#">Sign in</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+<div class="ht-links">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-vimeo"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-google-plus"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+</div>
+</div>
+<ul class="main-menu mobile-menu">
+  <li class="active"><a href="{% url 'index' %}">Home</a></li>
+  <li><a href="{% url 'clubs' %}">Club</a></li>
+  <li><a href="{% url 'schedule' %}">Schedule</a></li>
+  <li><a href="{% url 'results' %}">Results</a></li>
+  <li><a href="#">Sport</a></li>
+  <li><a href="#">Pages</a>
+  <ul class="dropdown">
+  <li><a href="{% url 'blog' %}">Blog</a></li>
+  <li><a href="{% url 'blogdetails' %}">Blog Details</a></li>
+  <li><a href="#">Schedule</a></li>
+  <li><a href="#">Results</a></li>
+</ul>
+</li>
+<li><a href="{% url 'contact' %}">Contact Us</a></li>
+</ul>
+<div id="mobile-menu-wrap"></div>
+</div>
+
+
+<header class="header-section">
+<div class="header__top">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="ht-info">
+<ul>
+<li>20:00 - May 19, 2019</li>
+<li><a href="#">Sign in</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="ht-links">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-vimeo"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-google-plus"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__nav">
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+<div class="logo">
+  <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
+</div>
+</div>
+<div class="col-lg-10">
+  <div class="nav-menu">
+  <ul class="main-menu">
+  <li><a href="{% url 'index' %}">Home</a></li>
+  <li><a href="{% url 'clubs' %}">Club</a></li>
+  <li><a href="{% url 'schedule' %}">Sporstpress</a></li>
+  <li class="active"><a href="{% url 'results' %}">News</a></li>
+  <li><a href="#">Sport</a></li>
+  <li><a href="#">Pages</a>
+  <ul class="dropdown">
+  <li><a href="{% url 'blog' %}">Blog</a></li>
+  <li><a href="{% url 'blogdetails' %}">Blog Details</a></li>
+  <li><a href="#">Schedule</a></li>
+  <li><a href="#">Results</a></li>
+</ul>
+</li>
+<li><a href="{% static 'contact' %}">Contact Us</a></li>
+</ul>
+<div class="nm-right search-switch">
+<i class="fa fa-search"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="canvas-open">
+<i class="fa fa-bars"></i>
+</div>
+</div>
+</div>
+</header>
+
+
+<section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb-bg.jpg">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="bs-text">
+<h2>Club</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="club-section spad">
+<div class="container">
+<div class="club-content">
+<div class="row">
+<div class="col-lg-5">
+<div class="cc-pic">
+<img src="img/club-logo.png" alt="">
+</div>
+</div>
+<div class="col-lg-6">
+<div class="cc-text">
+<div class="ct-title">
+<h3>Club Brazil</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum. </p>
+</div>
+<div class="ct-widget">
+<ul>
+<li>
+<h5>Established</h5>
+<p>Since 1987</p>
+ </li>
+<li>
+<h5>Former President</h5>
+<p>John Martin</p>
+</li>
+<li>
+<h5>A skipper</h5>
+<p>Jack Hadison</p>
+</li>
+<li>
+<h5>Total Matches</h5>
+<p>78</p>
+</li>
+<li>
+<h5>Location</h5>
+<p>Brasilia, Brazil</p>
+</li>
+<li>
+<h5>Social</h5>
+<div class="cw-social">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-youtube-play"></i></a>
+<a href="#"><i class="fa fa-google"></i></a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="club-tab-list">
+<div class="row">
+<div class="col-lg-8 m-auto">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Substitute</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Midfielder</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Forward</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Goalkeeper</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Sweeper</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="tabs-1" role="tabpanel">
+<div class="club-tab-content">
+<div class="ct-item">
+<div class="ci-text">
+<img src="img/club/p-1.jpg" alt="">
+<h5>12. Buddy Peck</h5>
+</div>
+<div class="ci-name">Forward</div>
+</div>
+<div class="ct-item">
+<div class="ci-text">
+<img src="img/club/p-2.jpg" alt="">
+<h5>08. John Smith</h5>
+</div>
+<div class="ci-name">Defensive midfielder</div>
+</div>
+<div class="ct-item">
+<div class="ci-text">
+ <img src="img/club/p-3.jpg" alt="">
+<h5>18. Hanry Edison</h5>
+</div>
+<div class="ci-name">Goalkeeper </div>
+</div>
+<div class="ct-item">
+<div class="ci-text">
+<img src="img/club/p-4.jpg" alt="">
+<h5>02. Frankie Diaz</h5>
+</div>
+<div class="ci-name">Central defender</div>
+</div>
+<div class="ct-item">
+<div class="ci-text">
+<img src="img/club/p-5.jpg" alt="">
+<h5>09. John Thompson</h5>
+</div>
+<div class="ci-name">Central midfielder</div>
+</div>
+<div class="ct-item">
+<div class="ci-text">
+<img src="img/club/p-6.jpg" alt="">
+<h5>22. Sara Mayer</h5>
+</div>
+<div class="ci-name">Defendef</div>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tabs-2" role="tabpanel">
+<div class="club-tab-content">
+<div class="ct-item">
+<div class="ci-text">
+<img src="img/club/p-5.jpg" alt="">
+<h5>09. John Thompson</h5>
+</div>
+<div class="ci-name">Central midfielder</div>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tabs-3" role="tabpanel">
+<div class="club-tab-content">
+<div class="ct-item">
+<div class="ci-text">
+<img src="img/club/p-1.jpg" alt="">
+<h5>12. Buddy Peck</h5>
+</div>
+<div class="ci-name">Forward</div>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tabs-4" role="tabpanel">
+<div class="club-tab-content">
+<div class="ct-item">
+<div class="ci-text">
+<img src="img/club/p-3.jpg" alt="">
+<h5>18. Hanry Edison</h5>
+</div>
+<div class="ci-name">Goalkeeper </div>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tabs-5" role="tabpanel">
+<div class="club-tab-content">
+<div class="ct-item">
+<div class="ci-text">
+<img src="img/club/p-1.jpg" alt="">
+ <h5>12. Buddy Peck</h5>
+</div>
+<div class="ci-name">Forward</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6">
+<div class="fs-logo">
+<div class="logo">
+  <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
+</div>
+<ul>
+<li><i class="fa fa-envelope"></i> <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71381f171e5f121e1d1e031d181331161c10181d5f121e1c">[email&#160;protected]</a></li>
+<li><i class="fa fa-copy"></i> +(12) 345 6789 10</li>
+<li><i class="fa fa-thumb-tack"></i> 40 Baria Sreet 133/2 New York City, United State</li>
+</ul>
+<div class="fs-social">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-tumblr"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 offset-lg-1">
+<div class="fs-widget">
+<h4>Top Club</h4>
+<ul class="fw-links">
+<li><a href="#">Brazil</a></li>
+<li><a href="#">Germany</a></li>
+<li><a href="#">Italy</a></li>
+<li><a href="#">Argentina</a></li>
+<li><a href="#">France</a></li>
+</ul>
+<ul class="fw-links">
+<li><a href="#">England</a></li>
+<li><a href="#">Netherlands</a></li>
+<li><a href="#">Hungary</a></li>
+<li><a href="#">Croatia</a></li>
+<li><a href="#">Poland</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="fs-widget">
+<h4>Recent News</h4>
+<div class="fw-item">
+<h5><a href="#">England win shows they have the spark to go far at World Cup</a></h5>
+<ul>
+<li><i class="fa fa-calendar"></i> May 19, 2019</li>
+<li><i class="fa fa-edit"></i> 3 Comment</li>
+</ul>
+</div>
+<div class="fw-item">
+<h5><a href="#">Sri Lanka v Australia: Cricket World Cup 2019 – live!</a></h5>
+<ul>
+<li><i class="fa fa-calendar"></i> May 19, 2019</li>
+<li><i class="fa fa-edit"></i> 3 Comment</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="copyright-option">
+<div class="row">
+<div class="col-lg-12">
+<div class="co-text"><p>
+Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+</p></div>
+<div class="co-widget">
+<ul>
+<li><a href="#">Copyright notification</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<div class="search-model">
+<div class="h-100 d-flex align-items-center justify-content-center">
+<div class="search-close-switch"><i class="fa fa-close"></i></div>
+<form class="search-model-form">
+<input type="text" id="search-input" placeholder="Search here.....">
+</form>
+</div>
+</div>
+
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7ced11356fbd9e77","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from preview.colorlib.com/theme/specer/club.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 07:37:01 GMT -->
+</html>

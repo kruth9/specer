@@ -1,0 +1,390 @@
+{% load static %}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from preview.colorlib.com/theme/specer/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 07:37:09 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Specer Template">
+<meta name="keywords" content="Specer, unica, creative, html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Specer | Template</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'Css/bootstrap.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'Css/font-awesome.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'Css/owl.carousel.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'Css/magnific-popup.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'Css/slicknav.min.css' %}" type="text/css">
+<link rel='stylesheet' href="{% static 'Css/style.css' %}">
+<script nonce="a7d34037-585d-498d-886f-11e9e1898a5f">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="../../cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+  
+  {% if user.is_authenticated %}
+
+<div id="preloder">
+<div class="loader"></div>
+</div>
+
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+<div class="canvas-close">
+<i class="fa fa-close"></i>
+</div>
+<div class="search-btn search-switch">
+<i class="fa fa-search"></i>
+</div>
+<div class="header__top--canvas">
+<div class="ht-info">
+<ul>
+<li>20:00 - May 19, 2019</li>
+<li><a href="#">Sign in</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+<div class="ht-links">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-vimeo"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-google-plus"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+</div>
+</div>
+<ul class="main-menu mobile-menu">
+  <li class="active"><a href="{% url 'Home' %}">Home</a></li>
+  <li><a href="{% url 'clubs' %}">Club</a></li>
+  <li><a href="{% url 'schedule' %}">Schedule</a></li>
+  <li><a href="{% url 'results' %}">Results</a></li>
+  <li><a href="#">Sport</a></li>
+  <li><a href="#">Pages</a>
+  <ul class="dropdown">
+  <li><a href="{% url 'blog' %}">Blog</a></li>
+  <li><a href="#">Schedule</a></li>
+  <li><a href="#">Results</a></li>
+</ul>
+</li>
+<li><a href="{% url 'contact' %}">Contact Us</a></li>
+</ul>
+<div id="mobile-menu-wrap"></div>
+</div>
+
+
+<header class="header-section">
+<div class="header__top">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="ht-info">
+<ul>
+<li>20:00 - May 19, 2019</li>
+<li><a href="#">Sign in</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="ht-links">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-vimeo"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-google-plus"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__nav">
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+<div class="logo">
+  <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
+</div>
+</div>
+<div class="col-lg-10">
+  <div class="nav-menu">
+  <ul class="main-menu">
+  <li><a href="{% url 'Home' %}">Home</a></li>
+  <li><a href="{% url 'clubs' %}">Club</a></li>
+  <li><a href="{% url 'schedule' %}">Sporstpress</a></li>
+  <li class="active"><a href="{% url 'results' %}">News</a></li>
+  <li><a href="#">Sport</a></li>
+  <li><a href="#">Pages</a>
+  <ul class="dropdown">
+  <li><a href="{% url 'blog' %}">Blog</a></li>
+  <li><a href="#">Schedule</a></li>
+  <li><a href="#">Results</a></li>
+</ul>
+</li>
+<li><a href="{% static 'contact' %}">Contact Us</a></li>
+</ul>
+<div class="nm-right search-switch">
+<i class="fa fa-search"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="canvas-open">
+<i class="fa fa-bars"></i>
+</div>
+</div>
+</div>
+</header>
+
+
+<section class="breadcrumb-section set-bg" data-setbg="{% static 'img/blog/blog.jpg' %}">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="bs-text">
+<h2>Blog</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="blog-section spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 left-blog-pad">
+<div class="large-blog set-bg" data-setbg="{% static 'img/blog/blog-2.jpg' %}">
+<div class="bi-tag">Soccer</div>
+<div class="bi-text">
+
+<ul>
+<li><i class="fa fa-calendar"></i> May 19, 2019</li>
+<li><i class="fa fa-edit"></i> 3 Comment</li>
+</ul>
+</div>
+</div>
+
+
+<div class="blog-items">
+ 
+  {% for blog in result3 %}
+  <div class="single-item">
+    <div class="bi-pic">
+      <img src="{{blog.image.url}}" alt="" height="200" widht="200">
+    </div>
+      <div class="bi-text">
+      <h4><a href="{% url 'blogdetails' blog.id %}">{{blog.title}}</a></h4>
+      <ul>
+      <li><i class="fa fa-calendar"></i> May 19, 2019</li>
+      <li><i class="fa fa-edit"></i> 3 Comment</li>
+      </ul>
+
+      <p>{{ blog.content|safe|truncatechars_html:200 }}</p>
+
+
+    </div>
+  </div>
+  {% endfor %}
+  
+</div>
+<div class="more-blog">
+<a href="#"><i class="fa fa-long-arrow-left"></i> Older post</a>
+<a href="#">Newer post <i class="fa fa-long-arrow-right"></i></a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="blog-sidebar">
+<div class="bs-categories">
+<div class="section-title sidebar-title">
+<h5>Categories</h5>
+</div>
+<ul>
+<li><a href="#">Fool Ball</a></li>
+<li><a href="#">Soccer</a></li>
+<li><a href="#">basketball</a></li>
+<li><a href="#">Volleyball</a></li>
+<li><a href="#">E-Sport</a></li>
+</ul>
+</div>
+<div class="follow-links">
+<div class="section-title sidebar-title">
+<h5>Follow</h5>
+</div>
+<ul>
+<li class="facebook">
+<i class="fa fa-facebook"></i>
+<div class="fl-name">Facebook</div>
+<span class="fl-fan">2.530 Fans</span>
+</li>
+<li class="twitter">
+<i class="fa fa-twitter"></i>
+<div class="fl-name">Twitter</div>
+<span class="fl-fan">2.046 Fans</span>
+</li>
+<li class="google">
+<i class="fa fa-google"></i>
+<div class="fl-name">Google</div>
+<span class="fl-fan">1.170 Fans</span>
+</li>
+</ul>
+</div>
+<div class="bs-recent">
+<div class="section-title sidebar-title">
+<h5>Recent Post</h5>
+</div>
+{% for i in data %}
+  <div class="news-item">
+    <div class="ni-pic">
+      <img src="img/news/ln-1.jpg" alt="">
+    </div>
+    <div class="ni-text">
+      <h5><a href="#">How To Quit Smoking Using Zyban</a></h5>
+      <ul>
+        <li><i class="fa fa-calendar"></i> May 19, 2019</li>
+        <li><i class="fa fa-edit"></i> 3 Comment</li>
+      </ul>
+    </div>
+  </div>
+{% endfor %}
+
+<div class="bs-popular-tag">
+<div class="section-title sidebar-title">
+<h5>Popular Tag</h5>
+</div>
+<div class="tags">
+<a href="#">Seagame</a>
+<a href="#">Fifa</a>
+<a href="#">World Cup 2019</a>
+<a href="#">Championship</a>
+<a href="#">2019</a>
+<a href="#">Qatar</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<footer class="footer-section set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6">
+<div class="fs-logo">
+<div class="logo">
+  <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
+</div>
+<ul>
+<li><i class="fa fa-envelope"></i> <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c881a6aea7e6aba7a4a7baa4a1aa88afa5a9a1a4e6aba7a5">[email&#160;protected]</a></li>
+<li><i class="fa fa-copy"></i> +(12) 345 6789 10</li>
+<li><i class="fa fa-thumb-tack"></i> 40 Baria Sreet 133/2 New York City, United State</li>
+</ul>
+<div class="fs-social">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-tumblr"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 offset-lg-1">
+<div class="fs-widget">
+<h4>Top Club</h4>
+<ul class="fw-links">
+<li><a href="#">Brazil</a></li>
+<li><a href="#">Germany</a></li>
+<li><a href="#">Italy</a></li>
+<li><a href="#">Argentina</a></li>
+<li><a href="#">France</a></li>
+</ul>
+<ul class="fw-links">
+<li><a href="#">England</a></li>
+<li><a href="#">Netherlands</a></li>
+<li><a href="#">Hungary</a></li>
+<li><a href="#">Croatia</a></li>
+<li><a href="#">Poland</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="fs-widget">
+<h4>Recent News</h4>
+<div class="fw-item">
+<h5><a href="#">England win shows they have the spark to go far at World Cup</a></h5>
+<ul>
+<li><i class="fa fa-calendar"></i> May 19, 2019</li>
+<li><i class="fa fa-edit"></i> 3 Comment</li>
+</ul>
+</div>
+<div class="fw-item">
+<h5><a href="#">Sri Lanka v Australia: Cricket World Cup 2019 – live!</a></h5>
+<ul>
+<li><i class="fa fa-calendar"></i> May 19, 2019</li>
+<li><i class="fa fa-edit"></i> 3 Comment</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="copyright-option">
+<div class="row">
+<div class="col-lg-12">
+<div class="co-text"><p>
+Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+</p></div>
+<div class="co-widget">
+<ul>
+<li><a href="#">Copyright notification</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<div class="search-model">
+<div class="h-100 d-flex align-items-center justify-content-center">
+<div class="search-close-switch"><i class="fa fa-close"></i></div>
+<form class="search-model-form">
+<input type="text" id="search-input" placeholder="Search here.....">
+</form>
+</div>
+</div>
+
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7ced113ca91f9e7a","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
+{% else %}
+{% include 'registration.html' %}
+{% endif %}
+
+</body>
+
+<!-- Mirrored from preview.colorlib.com/theme/specer/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 07:37:11 GMT -->
+</html>
