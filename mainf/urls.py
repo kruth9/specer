@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
@@ -15,7 +16,6 @@ urlpatterns = [
     path('signin/',views.Handle_Signin,name="signin"),
     path('logout', views.Handle_logout, name='logout'),
     path('search/', views.SearchFunction, name='search'),
-    # path('delete<int:s>', views.reply ,name="reply"),
-    # path('update<int:s>', views.comment,name="update"),
+   
     
 ]

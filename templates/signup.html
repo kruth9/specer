@@ -1,4 +1,8 @@
 {% load static %}
+{% load socialaccount %}
+{% load static socialaccount %}
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +23,7 @@
                   <div class="social-container">
                     <i class="fab fa-github"></i>
                     <i class="fab fa-codepen"></i>
-                    <i class="fab fa-google"></i>
+                    <a href="{% url "social:begin" "google-oauth2" %}"><i class="fab fa-google"></i></a>
                   </div>
                   <span>Or use your Email for registration</span>
                   <label>

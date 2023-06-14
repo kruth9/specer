@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-rmw^s51474e4$q1)gop&aa6vja4!-jzadkgwgpc$+-k*ujt$i6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -41,7 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainf',
     'tinymce',
+    'social_django',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -51,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'specer.urls'
@@ -66,6 +73,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                
             
             ],
         },
@@ -85,6 +94,16 @@ DATABASES = {
     }
 }
 
+AUTHENTICATION_BACKENDS = [
+    'social_core.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+    
+    
+]
+LOGIN_URL="signup"
+LOGIN_REDIRECT_URL ="Home"
+LOGOUT_URL="logout"
+LOGOUT_REDIRECT_URL ="signin"
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -136,3 +155,11 @@ MESSAGE_TAGS={
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+SOCIAL_AUTH_URL_NAMESPACE = 'social'
+
+
+    
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '857248321566-kcmq8tchq77be6gb3b6mf3qvftcl1jq8.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
